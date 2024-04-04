@@ -20,3 +20,8 @@ def description(request, id):
         "mybook": book
     }
     return HttpResponse(template.render(context=context))
+
+
+def main(request):
+    template = loader.get_template("index.html")
+    return HttpResponse(template.render())
