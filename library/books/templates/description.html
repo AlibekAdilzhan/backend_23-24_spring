@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html>
+{% extends "main.html" %}
 
-<body>
+{% block title %}
+description
+{% endblock %}
 
+{% block content %}
 <ul>
     <h1>{{ mybook.title }} --- {{ mybook.author }}</h1>
     <p>{{ mybook.year }}</p>
     <p>{{ mybook.price }}</p>
 </ul>
-
-</body>
-
-</html>
+{% endblock %}

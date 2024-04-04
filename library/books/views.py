@@ -12,6 +12,7 @@ def books(request):
     }
     return HttpResponse(template.render(context=my_context))
 
+
 def description(request, id):
     book = Book.objects.get(id=id)
     template = loader.get_template("description.html")
